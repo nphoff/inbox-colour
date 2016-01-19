@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Inbox header colour changer",
+  "description": "Changes the colour of the inbox header",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://inbox.google.com/*"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+
+}
